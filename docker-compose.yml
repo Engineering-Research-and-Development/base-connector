@@ -5,8 +5,8 @@ services:
     build: ./ecc
     ports:
       - "8161:8161"   # web interface
-      - "61610:61610" # SSL
-      - "61616:61616" # unencrypted
+      - "61714:61714" # SSL
+      - "61816:61816" # unencrypted
       - "1883:1883"   # MQTT
     volumes:
       - ./activemq/data:/opt/activemq/data

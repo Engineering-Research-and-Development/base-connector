@@ -6,13 +6,13 @@
            http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
            http://camel.apache.org/schema/spring http://camel.apache.org/schema/spring/camel-spring.xsd" >
 
-    <camelContext id="camel" trace="true" xmlns="http://camel.apache.org/schema/spring">
+<!--    <camelContext id="camel" trace="true" xmlns="http://camel.apache.org/schema/spring">-->
 
-        <route id="heartbeat">
-            <from id="route-timer" uri="timer:60sec?period=60000"/>
-            <log message="Heartbeat!"/>
-        </route>
+<!--        <route id="heartbeat">-->
+<!--            <from id="route-timer" uri="timer:60sec?period=60000"/>-->
+<!--            <log message="Heartbeat!"/>-->
+<!--        </route>-->
 
-    </camelContext>
+<!--    </camelContext>-->
 
 </beans>
