@@ -1,0 +1,13 @@
+version: "2"
+services:
+  execution-core-container:
+    container_name: execution-core-container
+    build: ./ecc
+    ports:
+      - "8160:8161"   # web interface
+      - "61716:61716" # SSL
+      - "61816:61816" # unencrypted
+      - "1882:1883"   # MQTT
+    volumes:
+      - ./activemq/data:/opt/activemq/data
+      - ./etc:/execution-core-container
